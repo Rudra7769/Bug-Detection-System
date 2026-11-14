@@ -1,0 +1,32 @@
+{
+  "tfidf": {
+    "total_queries": 1242,
+    "mrr": 0.256,
+    "map": 0.256,
+    "hit_at_1": 0.1771,
+    "hit_at_3": 0.2987,
+    "hit_at_5": 0.3704,
+    "recall_at_5": 0.3704,
+    "recall_at_10": 0.4461
+  },
+  "sbert": {
+    "total_queries": 1242,
+    "mrr": 0.4286,
+    "map": 0.4286,
+    "hit_at_1": 0.339,
+    "hit_at_3": 0.4879,
+    "hit_at_5": 0.5403,
+    "recall_at_5": 0.5403,
+    "recall_at_10": 0.6264
+  },
+  "hybrid": {
+    "total_queries": 1242,
+    "mrr": 0.4348,
+    "map": 0.4348,
+    "hit_at_1": 0.3366,
+    "hit_at_3": 0.4936,
+    "hit_at_5": 0.566,
+    "recall_at_5": 0.566,
+    "recall_at_10": 0.6449
+  }
+}

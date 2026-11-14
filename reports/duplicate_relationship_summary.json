@@ -1,0 +1,32 @@
+{
+  "total_duplicate_reports": 14117,
+  "direct_masters_present_in_dataset": 12880,
+  "direct_masters_missing_from_dataset": 1237,
+  "transitive_duplicate_chains": 916,
+  "unique_canonical_master_clusters": 8125,
+  "sample_clusters": {
+    "28126": [
+      25,
+      31234,
+      28126
+    ],
+    "20": [
+      40,
+      20
+    ],
+    "22": [
+      48,
+      22
+    ],
+    "60": [
+      60,
+      61
+    ],
+    "2": [
+      15392,
+      2,
+      9779,
+      94
+    ]
+  }
+}

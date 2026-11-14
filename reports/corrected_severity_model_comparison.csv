@@ -1,0 +1,9 @@
+Model,Accuracy,Balanced Acc,Macro F1,Weighted F1,Predictions Distribution
+Track A: Verified TF-IDF SVM,0.7158,0.2035,0.2111,0.6898,"{'normal': 3901, 'major': 355, 'minor': 110, 'critical': 97, 'trivial': 54, 'blocker': 11}"
+Track A: Verified TF-IDF LR,0.5565,0.2422,0.2217,0.6065,"{'normal': 2793, 'major': 875, 'minor': 355, 'critical': 330, 'trivial': 146, 'blocker': 29}"
+Track A: Verified SBERT SVM,0.6283,0.2131,0.2038,0.6472,"{'normal': 3351, 'major': 346, 'critical': 340, 'minor': 166, 'trivial': 164, 'blocker': 161}"
+Track A: Verified SBERT LR,0.3116,0.2816,0.1758,0.3971,"{'normal': 1354, 'major': 904, 'critical': 750, 'minor': 622, 'trivial': 467, 'blocker': 431}"
+Track B: Full SVM (Verified Test),0.6884,0.1752,0.1727,0.6659,"{'normal': 3868, 'critical': 188, 'blocker': 185, 'minor': 141, 'trivial': 76, 'major': 70}"
+Track B: Full LR (Verified Test),0.4368,0.193,0.174,0.5193,"{'normal': 2295, 'critical': 690, 'blocker': 510, 'major': 407, 'minor': 368, 'trivial': 258}"
+Track B: Full SVM (Full Test),0.7955,0.1811,0.176,0.8139,"{'normal': 11024, 'blocker': 511, 'critical': 466, 'minor': 340, 'trivial': 206, 'major': 151}"
+Track B: Full LR (Full Test),0.4993,0.2063,0.1542,0.6195,"{'normal': 6746, 'critical': 1726, 'blocker': 1560, 'minor': 1016, 'major': 967, 'trivial': 683}"

@@ -1,0 +1,37 @@
+{
+  "best_duplicate_model": "Hybrid (0.7 SBERT + 0.3 TF-IDF)",
+  "best_verified_severity_model": "TF-IDF + Logistic Regression (Track A Verified)",
+  "best_full_severity_model": "TF-IDF + Linear SVM",
+  "hybrid_weights": {
+    "sbert": 0.7,
+    "tfidf": 0.3
+  },
+  "canonical_severities": [
+    "trivial",
+    "minor",
+    "normal",
+    "major",
+    "critical",
+    "blocker"
+  ],
+  "dataset_sizes": {
+    "full_cleaned": 84653,
+    "train_partition": 59257,
+    "val_partition": 12698,
+    "test_partition": 12698,
+    "verified_subset": 14924,
+    "valid_test_duplicate_queries": 1242
+  },
+  "artifacts": {
+    "tfidf_vectorizer": "tfidf_vectorizer.pkl",
+    "severity_svm_verified": "severity_svm_verified.pkl",
+    "severity_logistic_verified": "severity_logistic_verified.pkl",
+    "severity_sbert_svm_verified": "severity_sbert_svm_verified.pkl",
+    "severity_sbert_lr_verified": "severity_sbert_lr_verified.pkl",
+    "severity_svm_full": "severity_svm_full.pkl",
+    "severity_logistic_full": "severity_logistic_full.pkl",
+    "severity_calibrator": "severity_calibrator.pkl",
+    "bug_embeddings": "bug_embeddings.npy",
+    "bug_metadata": "bug_metadata.csv"
+  }
+}

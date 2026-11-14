@@ -1,0 +1,7 @@
+Track,Model,Accuracy,Macro F1,Balanced Acc
+Verified-only,TF-IDF + SVM,0.7933,0.1475,0.1667
+Verified-only,TF-IDF + LR,0.7931,0.1512,0.1685
+Verified-only,SBERT + SVM,0.7933,0.1475,0.1667
+Verified-only,SBERT + LR,0.7933,0.1475,0.1667
+Full-data,Full SVM (Eval on Verified Test),0.7933,0.1475,0.1667
+Full-data,Full SVM (Eval on Full Test),0.9097,0.1588,0.1667
