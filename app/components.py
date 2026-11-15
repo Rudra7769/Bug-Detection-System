@@ -20,10 +20,6 @@ def render_header(title: str = "Bug Report Intelligence", subtitle: str = "Dupli
                 <h1 class="saas-header-title">🐛 {title}</h1>
                 <div class="saas-header-sub">{subtitle}</div>
             </div>
-            <div style="text-align: right;">
-                <span class="saas-badge-live">● Models Loaded</span>
-                <div style="font-size: 11px; color: #64748b; margin-top: 6px;">Eclipse Bugzilla Dataset • NLP Project</div>
-            </div>
         </div>
         """,
         unsafe_allow_html=True
