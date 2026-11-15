@@ -1,6 +1,6 @@
 """
 Bug Intelligence — Bug Report Duplicate Detection & Severity Prediction System
-Premium SaaS Dark-Themed Streamlit Application Entrypoint
+Streamlit Web Application Entrypoint
 """
 
 import os
@@ -153,10 +153,10 @@ def main():
         st.markdown(
             """
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
-                <div style="background: linear-gradient(135deg, #4f46e5, #7c3aed); width: 38px; height: 38px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🐛</div>
+                <div style="background: linear-gradient(135deg, #2563eb, #4f46e5); width: 38px; height: 38px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px;">🐛</div>
                 <div>
                     <div style="font-weight: 800; font-size: 16px; color: #f8fafc; letter-spacing: -0.3px;">Bug Intelligence</div>
-                    <div style="font-size: 11px; color: #94a3b8;">NLP & Triaging Platform</div>
+                    <div style="font-size: 11px; color: #94a3b8;">NLP & ML Project</div>
                 </div>
             </div>
             """,
@@ -164,7 +164,7 @@ def main():
         )
 
         nav_page = st.radio(
-            "System Modules",
+            "Navigation",
             [
                 "Overview Dashboard",
                 "Analyze Bug",
@@ -177,15 +177,15 @@ def main():
         )
 
         st.markdown("---")
-        st.markdown("<div style='font-size: 12px; font-weight: 700; color: #94a3b8; text-transform: uppercase; margin-bottom: 8px;'>Active ML Engine</div>", unsafe_allow_html=True)
+        st.markdown("<div style='font-size: 12px; font-weight: 700; color: #94a3b8; text-transform: uppercase; margin-bottom: 8px;'>Active Models</div>", unsafe_allow_html=True)
         st.markdown(
             """
             <div style="background: #111827; border: 1px solid #1f2937; border-radius: 8px; padding: 10px 12px; font-size: 12px;">
-                <div style="color: #38bdf8; font-weight: 600;">● Severity: TF-IDF + Logistic Reg</div>
+                <div style="color: #38bdf8; font-weight: 600;">● Severity: TF-IDF + Logistic Regression</div>
                 <div style="color: #64748b; font-size: 11px; margin-top: 2px;">Track A (Verified) • Balanced Weights</div>
-                <div style="color: #818cf8; font-weight: 600; margin-top: 6px;">● Duplicate: Hybrid Dual-Encoder</div>
+                <div style="color: #818cf8; font-weight: 600; margin-top: 6px;">● Duplicate: Hybrid Retrieval</div>
                 <div style="color: #64748b; font-size: 11px; margin-top: 2px;">0.70 SBERT + 0.30 TF-IDF</div>
-                <div style="color: #34d399; font-weight: 600; margin-top: 6px;">● Candidates: 12,935 Indexed</div>
+                <div style="color: #34d399; font-weight: 600; margin-top: 6px;">● Indexed Bugs: 12,935</div>
             </div>
             """,
             unsafe_allow_html=True
@@ -196,8 +196,7 @@ def main():
             f"""
             <div style="font-size: 11px; color: #64748b; line-height: 1.5;">
                 <strong>Dataset:</strong> Eclipse Bugzilla Core<br>
-                <strong>Version:</strong> v2.4.0 (Production Build)<br>
-                <strong>Python:</strong> 3.10.11 • PyTorch CPU
+                <strong>System:</strong> Python 3.10 • PyTorch / Scikit-Learn
             </div>
             """,
             unsafe_allow_html=True
@@ -249,15 +248,15 @@ def main():
                 render_kpi_card("Severity Accuracy", "55.65%", "Track A Logistic Regression", "Balanced Acc: 24.22%")
 
         st.markdown("---")
-        st.markdown("#### 💡 What is Bug Intelligence?")
+        st.markdown("#### 💡 Project Overview")
         st.markdown(
             """
             <div class="info-callout">
-                Bug Intelligence is an automated software engineering triage assistant designed for high-volume open-source and enterprise repositories.
-                When a developer or user logs a bug report, this system performs two critical NLP tasks in real time:
+                Bug Intelligence is an automated bug triaging system designed for software repositories.
+                When a new bug report is submitted, this system performs two core NLP tasks:
                 <ol style="margin-top: 8px; margin-bottom: 4px;">
-                    <li><strong>Duplicate Detection:</strong> Compares the query against 12,935 historical bugs using a hybrid dual-encoder (SBERT semantic embeddings + lexical TF-IDF) and ranks the Top-5 most relevant candidates to prevent redundant developer effort.</li>
-                    <li><strong>Severity Prediction:</strong> Predicts the severity level (<em>Blocker</em> to <em>Trivial</em>) with model confidence estimates using class-weighted multi-class Logistic Regression trained on directly verified Bugzilla reports.</li>
+                    <li><strong>Duplicate Detection:</strong> Compares the report against 12,935 historical bugs using a hybrid retrieval model (SBERT semantic embeddings + TF-IDF) and ranks the Top-5 most similar existing reports to help avoid duplicate tickets.</li>
+                    <li><strong>Severity Prediction:</strong> Classifies the severity level (<em>Blocker</em> to <em>Trivial</em>) with probability estimates using class-weighted Logistic Regression trained on verified Bugzilla reports.</li>
                 </ol>
             </div>
             """,
@@ -551,7 +550,7 @@ def main():
             | **Label Source** | Genuine developer Bugzilla triage records | 14,924 verified + 69,729 priority-derived |
             | **Observed Label Noise** | Minimal / High Quality | High (68.5% of P1 bugs are labeled 'Normal' in reality) |
             | **Macro F1 (Verified Test)** | **0.2217 (Superior)** | 0.1740 (Degraded by label noise) |
-            | **Recommendation** | **Production Selected Model** | Supplemental Research Benchmark Only |
+            | **Model Choice** | **Selected Model for App** | Baseline Comparison Model |
             """
         )
 

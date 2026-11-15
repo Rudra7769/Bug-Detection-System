@@ -1,6 +1,6 @@
 """
-Professional SaaS Dark Theme Styles and Custom CSS for Bug Intelligence
-Linear / GitHub / Enterprise Software Intelligence Dashboard aesthetics.
+Custom UI Styles and CSS for Bug Intelligence Dashboard
+Clean modern interface for Bug Report Duplicate Detection & Severity Prediction.
 """
 
 CUSTOM_CSS = """

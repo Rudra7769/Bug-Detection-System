@@ -1,5 +1,5 @@
 """
-Reusable SaaS Visual Components for Streamlit Bug Intelligence
+Reusable UI Components for Streamlit Bug Intelligence
 Interactive Plotly charts, KPI metrics, candidate cards, and headers.
 """
 
@@ -11,18 +11,18 @@ from typing import List, Dict, Any
 from .styles import SEVERITY_COLORS, get_severity_badge_html
 
 
-def render_header(title: str = "Bug Intelligence", subtitle: str = "Enterprise Duplicate Detection & Severity Prediction System"):
-    """Renders the top application header with modern dark styling."""
+def render_header(title: str = "Bug Report Intelligence", subtitle: str = "Duplicate Detection & Severity Prediction System"):
+    """Renders the top application header."""
     st.markdown(
         f"""
         <div class="saas-header">
             <div>
-                <h1 class="saas-header-title">🛡️ {title}</h1>
+                <h1 class="saas-header-title">🐛 {title}</h1>
                 <div class="saas-header-sub">{subtitle}</div>
             </div>
             <div style="text-align: right;">
-                <span class="saas-badge-live">● PRODUCTION ML ENGINE READY</span>
-                <div style="font-size: 11px; color: #64748b; margin-top: 6px;">Eclipse Bugzilla v2.4 • MiniLM-L6-v2</div>
+                <span class="saas-badge-live">● Models Loaded</span>
+                <div style="font-size: 11px; color: #64748b; margin-top: 6px;">Eclipse Bugzilla Dataset • NLP Project</div>
             </div>
         </div>
         """,
